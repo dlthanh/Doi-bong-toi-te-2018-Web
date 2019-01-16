@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Đội bóng khủng khiếp nhất Việt Nam 2018</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script>
+        $(function() {
+            var bdtm = new Swiper('.dbtm-swiper', {
+                speed: 600,
+                direction: 'vertical',
+                mousewheel: true,
+                allowTouchMove: false,
+                pagination: {
+                    el: '.dbtm-paging',
+                    clickable: true
+                },
+                on: {
+                    slideChangeTransitionStart: function() {
+                        if(bdtm.activeIndex == ($('.dbtm-item').length - 1)) {
+                            $('.dbtm-arrow').fadeOut(600);
+                        } else {
+                            $('.dbtm-arrow').fadeIn(600);
+                        }
+                    }
+                }
+            });
+
+            $("[data-fancybox]").fancybox({
+                touch: false
+            });
+
+            $('.dbtm-arrow').click(function() {
+                bdtm.slideNext(600);
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="dbtm-wrapper">
+        <div class="dbtm-swiper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="dbtm-item swiper-slide">
+                    <div class="table-cell">
+                        <div class="dbtm-tiendao">
+                            <img src="images/title.png" alt="" class="dbtm-img">
+                            <img src="images/sapo.png" alt="" class="dbtm-img img-abs-top" style="margin-left: 14%">
+                            <div class="bdtm-tiendao-list">
+                                <div class="bdtm-tiendao-item" data-fancybox data-src="#hidden1">
+                                    <img src="images/img-1.png" alt="" class="dbtm-img">
+
+                                    <div class="info">
+                                        <img src="images/subtitle-1.png" alt="" class="dbtm-img">
+
+                                        <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden1" href="javascript:;">Xem thông tin</a>
+                                    </div>
+                                </div>
+
+                                <div class="bdtm-tiendao-item" data-fancybox data-src="#hidden2">
+                                    <img src="images/img-2.png" alt="" class="dbtm-img">
+
+                                    <div class="info">
+                                        <img src="images/subtitle-2.png" alt="" class="dbtm-img">
+
+                                        <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden2" href="javascript:;">Xem thông tin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dbtm-item swiper-slide">
+                    <div class="table-cell">
+                        <div class="bdtm-tienve">
+                            <img src="images/tienve.png" alt="" class="dbtm-img">
+
+                            <div class="bdtm-tienve-list">
+                                <div class="dbtm-tienve-item" data-fancybox data-src="#hidden3">
+                                    <img src="images/img-3.png" alt="" class="dbtm-img">
+                                    <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden3" href="javascript:;">Xem thông tin</a>
+                                </div>
+
+                                <div class="dbtm-tienve-item" data-fancybox data-src="#hidden4">
+                                    <img src="images/img-4.png" alt="" class="dbtm-img">
+                                    <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden4" href="javascript:;">Xem thông tin</a>
+                                </div>
+
+                                <div class="dbtm-tienve-item" data-fancybox data-src="#hidden5">
+                                    <img src="images/img-5.png" alt="" class="dbtm-img">
+                                    <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden5" href="javascript:;">Xem thông tin</a>
+                                </div>
+
+                                <div class="dbtm-tienve-item" data-fancybox data-src="#hidden6">
+                                    <img src="images/img-6.png" alt="" class="dbtm-img">
+                                    <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden6" href="javascript:;">Xem thông tin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dbtm-item swiper-slide">
+                    <div class="table-cell">
+                        <div class="dbtm-hauve">
+                            <img src="images/hauve.png" alt="" class="dbtm-img">
+
+                            <div class="dbtm-hauve-list">
+                                <div class="dbtm-hauve-item" data-fancybox data-src="#hidden7">
+                                    <img src="images/img-7.png" alt="" class="dbtm-img">
+                                    <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden7" href="javascript:;">Xem thông tin</a>
+                                </div>
+
+                                <div class="dbtm-hauve-item" data-fancybox data-src="#hidden8">
+                                    <img src="images/img-8.png" alt="" class="dbtm-img">
+                                    <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden8" href="javascript:;">Xem thông tin</a>
+                                </div>
+
+                                <div class="dbtm-hauve-item" data-fancybox data-src="#hidden9">
+                                    <img src="images/img-9.png" alt="" class="dbtm-img">
+                                    <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden9" href="javascript:;">Xem thông tin</a>
+                                </div>
+
+                                <div class="dbtm-hauve-item" data-fancybox data-src="#hidden10">
+                                    <img src="images/img-10.png" alt="" class="dbtm-img">
+                                    <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden10" href="javascript:;">Xem thông tin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dbtm-item swiper-slide">
+                    <div class="table-cell">
+                        <div class="dbtm-thumon">
+                            <img src="images/thumon.png" alt="" class="dbtm-img">
+
+                            <div class="dbtm-thumon-list">
+                                <div class="dbtm-thumon-item" data-fancybox data-src="#hidden11">
+                                    <img src="images/img-11.png" alt="" class="dbtm-img">
+                                    <a href="javascript:;" class="dbtm-button" data-fancybox data-src="#hidden11" href="javascript:;">Xem thông tin</a>
+                                </div>
+                            </div>
+
+
+                            <img src="images/credit.png" alt="" class="dbtm-credit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dbtm-paging swiper-pagination"></div>
+
+            <div class="dbtm-arrow">
+                <img src="images/btn-arrow.png" alt="">
+            </div>
+        </div>
+
+        <div id="hidden1" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-1.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-1.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Tiền đạo của Đội bóng ác mộng luôn là vị trí "nóng", khó lựa chọn và gây nhiều tranh cãi nhất. Tuy nhiên, năm 2018, không một ai có thể cản cầu thủ có cái tên rất sốc ở vị trí này: Truyền thông bẩn.</p>
+
+                        <p>Phan Ngọc Luân, Kiều Minh Tuấn, An Nguy... là 3 "tiền đạo" được nhắc đến nhiều nhất năm 2018, khiến showbiz rúng động. Các cầu thủ này thường xuyên thể hiện bản thân bằng các động tác kỹ thuật dư thừa, ăn vạ xấu xí khiến giả ngán ngẩm.</p>
+
+                        <p>Nhờ sự hoạt động tích cực quá mức và quá vô lý, PR bẩn nhận được nhiều chỉ trích dữ dội và là nhân tố u ám tăng thêm đáng kể mức độ ác mộng cho toàn tập thể Ác mộng.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hidden2" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-2.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-2.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Vốn là cầu thủ to cao, có địa vị, tiền đạo Cửa quyền góp mặt trong nhiều trận đấu ác mộng và thể hiện khả năng càn lướt không ai dám so bì, dù các bàn thắng đều ghi trong tư thế việt vị.</p>
+
+                        <p>Trong bất kỳ màu áo nào, cảnh sát kinh tế, quản lý thị trường hay kiểm tra an toàn thực phẩm, tiền đạo này cũng gây không ít tổn thất cho "nền bóng đá" đang trong quá trình trong sạch hóa, mở cửa và ngày càng hiện đại của Việt Nam. Sau cú đánh nguội Con Cưng trên địa bản TP HCM, tiền đạo này gây ấn tượng với pha tấn công “bằng vàng” ở Cần Thơ, với kết quả tính được bằng kim cương. Chỉ một pha tạt bóng của Cửa quyền, doanh nghiệp đã đủ lao đao. Dù được cứu thoát, các nạn nhân của Cửa quyền chỉ dám có phản ứng chừng mực chứ không dám tỏ thái độ bất mãn.</p>
+
+                        <p>Mới 2 tình huống bị lộ, người hâm mộ đã quá ngán ngẩm với sự trở lại của một cầu thủ tưởng như đã qua thời hoàng kim từ rất lâu rồi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hidden3" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-3.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-3.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Ở cánh song song với Ma túy đá, hang ổ ma túy Lóng Luông (Vân Hồ, Sơn La) đã có thời điểm trở thành ngôi sao sáng nhất của đội bóng Ác mộng.</p>
+
+                        <p>Lần đầu tiên trong lịch sử phòng chống ma túy, lực lượng cảnh sát Việt Nam phải huy động đến 6 xe bọc thép, hàng trăm cán bộ vào cuộc, mất hơn 3 ngày nổ súng vây ráp, tấn công. Chỉ riêng điều này đã nói lên độ nguy hiểm của hang ổ ma túy Lóng Luông.</p>
+
+                        <p>Những kẻ làm nên tên tuổi cho hang ổ ma túy Lóng Luông là Nguyễn Thanh Tuân và Nguyễn Văn Thuận – nằm trong số tội phạm bị tiêu diệt trong chiến dịch vây ráp. Tuân, Thuận đều là những mắt xích quan trọng trong các đường dây mua bán trái phép chất ma túy từ bên kia biên giới vào Việt Nam. Khi các đường dây này bị triệt phá, cả hai lên bản Tà Dê, xã Lóng Luông trốn nã, tiếp tục lập và điều hành các đường dây khác, mua bán hàng nghìn bánh heroin, lập nên một hang ổ ma túy nhức nhối trên địa bàn trong nhiều năm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hidden4" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-4.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-4.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Đại gia Vũ Nhôm khét tiếng và bí ẩn nhất Đà Nẵng bị khởi tố hình sự trong một đêm đông cuối năm 2017. Nhờ đó, trong đội hình đội bóng Ác mộng 2018 xuất hiện một tiền vệ với kỹ xảo tổ chức ít người sánh kịp.</p>
+
+                        <p>Dính chùm trong đội hình mà Vũ Nhôm kiến tạo là một loạt cán bộ, quan chức ở Đà Nẵng, TP HCM cùng tướng lĩnh công an cấp cao – điều cho thấy những đường chuyền hiểm độc của Vũ Nhôm có thể đến được nhiều địa chỉ rất khó lường. Đường chuyền của Vũ Nhôm mang sức mạnh của nhiều bất động sản, xe hơi xịn và rất nhiều tiền.</p>
+
+                        <p>Không những thế, các đường chuyền của Vũ Nhôm đều có khả năng sát thương cao, khi mà phần lớn người nhận nay đã mất chức, bị bắt, bị khởi tố… Bản thân tiền vệ này cũng nhận được những gì xứng đáng với tài năng của mình: Gần 30 năm tù sau 2 phiên tòa, mà đó còn chưa phải là con số cuối cùng.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hidden5" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-5.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-5.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Ở vị trí giữa sân, cựu tướng Phan Văn Vĩnh, Nguyễn Thanh Hóa cùng hai trùm cờ bạc Nguyễn Văn Dương, Phan Sào Nam đã thực hiện pha bóng tấn công “đắt giá” nhất cho đội Ác mộng, với các con số xô đổ lịch sử tố tụng, khiến cả anh hùng trong đấu tranh với tội phạm cũng phải ra hầu tòa.</p>
+
+                        <p>Phiên tòa sơ thẩm xét xử đường dây này xác định, sau 28 tháng vận hành dưới sự “bảo kê” của 2 cựu tướng công an, đã có 43 triệu tài khoản nạp tiền ảo vào cổng game Rikvip/TipClub và tổng doanh thu bất chính lên tới gần 10.000 tỷ đồng.</p>
+
+                        <p>Dù tổ chức đội hình khéo léo, có núp bóng, bọc lót tốt, song tiền vệ trị giá hàng nghìn tỷ vẫn dính “thẻ đỏ” với mức án treo giò tổng cộng hàng chục năm tù.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hidden6" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-6.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-6.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Từ lâu, Ma túy đá đã nổi danh với khả năng luồn lách, len lỏi sâu vào những kẽ hở nhỏ nhất, đeo bám dai dẳng, xé nát nhiều hàng thủ một cách quỷ quyệt. Năm 2018 là năm thật sự khủng khiếp khi tiền vệ cánh này tác oai tác quái, gây ra hàng loạt hậu quả khủng khiếp.</p>
+
+                        <p>Ma túy đá là thủ phạm dẫn đến thảm kịch một ca sĩ nhét tỏi vào miệng bạn gái đến chết vì tưởng là ma. Cũng chính Ma túy đá gây ra cái chết cho 7 thanh niên trong nhạc hội ở Hồ Tây (Hà Nội).</p>
+
+                        <p>Ma túy đá không chừa bất cứ ai. Trong số các nạn nhân của nó, có cả những cán bộ công chức, giáo viên… Điều đáng lo ngại nhất là trong thời gian tới, có lẽ cầu thủ này sẽ chưa ngừng lại những miếng đánh chết người.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hidden7" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-7.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-7.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Được biết đến đầu tiên khi thi đấu trong màu áo Hà Giang, hậu vệ cánh này nhanh chóng thể hiện khả năng kinh dị khi cùng lúc xuất hiện cả ở các địa bàn khác như Sơn La, Hòa Bình...</p>
+
+                        <p>Không có gì xuất sắc trong khả năng phòng thủ, nhưng Gian lận thi cử đã biểu diễn kỹ thuật đen tối có một không hai, qua mặt hàng loạt quy trình thi cử nghiêm ngặt để “lên bóng” cho hàng trăm bài thi THPT Quốc gia của thí sinh Hà Giang từ 0-2 điểm thành 9-10, biến học sinh làng nhàng lên "top 10 cả nước". Dù Bí thư Hà Giang Triệu Tài Vinh cho rằng không liên quan, nhưng con gái ông vẫn “bị” nâng 5,4 điểm. Sau chấm thẩm định, một số thí sinh “top 10 cả nước” bị giảm điểm đến mức trượt tốt nghiệp.</p>
+
+                        <p>Hà Giang chưa kịp "nguội", cầu thủ này lại gây sóng gió ở Sơn La, Hoà Bình… Hàng chục cán bộ quản lý giáo dục địa phương đã vướng vòng lao lý, Bộ trưởng GD&ĐT phải lên tiếng xin nhận trách nhiệm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hidden8" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-8.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-8.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Luôn thi đấu với tốc độ cực cao – Đó chưa phải là những phẩm chất “hủy diệt” nhất của trung vệ Hung thần cao tốc. Trong năm qua, nhiều lần cầu thủ này đã trình diễn các pha gây sốc như dừng giữa cao tốc, đi lùi trên cao tốc, hay thậm chí là chạy ngược chiều ở làn tốc độ cao nhất. Một con số thống kê kinh hoàng là trong 6 tháng đầu năm 2018 đã có tới 22.000 phương tiện vi phạm quy định về an toàn trên cao tốc.</p>
+
+                        <p>Những pha xử lý điên rồ, coi thường mạng sống của chính mình cũng như rất nhiều người khác thường dẫn đến kết quả thảm khốc, tự phá bỏ mọi hệ thống phòng ngự an toàn. Hung thần cao tốc đã nhiều lần “đốt lưới” chính gia đình mình, “đốt lưới” cả gia đình người khác.</p>
+
+                        <p>Hãy luôn cảnh giác với trung vệ này. Những pha phạm lỗi khi thi đấu ở một trận cầu đầy tốc độ như đường cao tốc sẽ mang lại nhiều hệ lụy không thể sửa chữa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hidden9" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-9.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-9.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Kể từ thời điểm ra mắt năm 2002 đến nay, quy hoạch Khu đô thị mới Thủ Thiêm đã buộc nhiều người hâm mộ nơi đây phải chịu những oan ức và bức xúc 16 năm chưa được giải tỏa.</p>
+
+                        <p>Bên cạnh khả năng lấn sân, thu hồi đất ngoài quy hoạch, gây ức chế cho khán giả địa phương cũng như cả nước, Quy hoạch Thủ Thiêm còn có một năng lực cực kỳ quái dị: Tàng hình. Thậm chí khi không thấy bóng dáng cầu thủ này nơi đâu, người ta còn phải tranh cãi: Anh đã mất tích, hay anh không hề tồn tại!</p>
+
+                        <p>Dù sở hữu nhiều tiểu xảo đặc dị, trung vệ này không thể cứu nổi một trận cầu đổ bể. Sau nhiều năm bắt người dân phải sống trong ác mộng, nay ác mộng bắt đầu đến với những nhân vật đứng phía sau trung vệ tai tiếng và thích biến mất khi cần có mặt này.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hidden10" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-10.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-10.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Bạo lực học đường được xem là hậu vệ có lối chơi khá rắn, sở hữu nhiều tình huống phạm lỗi nguy hiểm, dính nhiều thẻ phạt nhất nhì năm 2018, nhưng không mang lại chút an toàn nào cho hành lang cánh của đội hình.</p>
+
+                        <p>Có thể dễ dàng liệt kê hàng loạt pha phạm lỗi đình đám: Giáo viên ở Long An bắt học sinh quỳ, sau đó phụ huynh bắt cô giáo phải quỳ lại. Học sinh bóp cổ cô giáo ngay trong lớp ở Bến Tre. Ở Nghệ An, một thầy giáo bị đánh dập sống mũi, một cô giáo mầm non bị đánh suýt sẩy thai. Tại TP HCM, một cô giáo “bạo hành tinh thần” bằng cách lên lớp mà không nói câu nào suốt một học kỳ. Tại Hải Phòng, cô giáo bắt học sinh uống nước giặt giẻ lau bảng. Tại Ninh Bình, cô giáo mầm non cho cả lớp đánh hội đồng một bé. Nặng nề nhất, một cô giáo ở Quảng Bình còn bắt cả lớp tát bạn 231 cái, và khi vỡ lở mới biết đây không phải là lần đầu có học sinh bị phạt kiểu đó.</p>
+
+                        <p>Cao điểm, có thời gian chỉ trong 1 tháng, tới 10 vụ bạo lực học đường được đưa lên mặt báo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hidden11" class="dbtm-popup" style="display: none;">
+            <div class="dbtm-main">
+                <div class="dbtm-left">
+                    <img src="images/popup-11.png" alt="">
+                </div>
+
+                <div class="dbtm-right">
+                    <img src="images/title-popup-11.png" alt="">
+
+                    <div class="dbtm-content">
+                        <p>Trấn giữ khung thành của đội bóng Ác mộng, Người đẹp bán dâm chắc chắn không phải “dạng vừa đâu”. Cách thủ môn này “chơi bóng” khiến khán giả luôn bất ngờ, dù vẫn luôn biết rằng cô sẵn sàng để bóng lọt qua tay, qua chân, qua bất cứ đâu, làm thủng lưới bất cứ lúc nào cô thích. Không chỉ bán tỷ số, thủ môn của đội bóng Ác mộng còn có khả năng bán sạch sẽ, với cái giá tăng chóng mặt, mọi thứ thuộc về mình: Từ danh tiếng, hình ảnh, uy tín cho tới cả thân xác.</p>
+
+                        <p>Ra sân với triết lý "thứ gì cũng dám bán", thủ môn này luôn là tâm điểm chú ý mỗi khi đối mặt với các tiền đạo của đội bóng Đại gia ăn chơi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
