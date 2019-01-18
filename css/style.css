@@ -176,10 +176,29 @@
 }
 .dbtm-left {
     width: 37.8767123288%;
+    position: relative;
 }
 .dbtm-left img {
     width: 100%;
     vertical-align: middle!important;
+}
+.dbtm-readmore {
+    position: absolute;
+    bottom: 5%;
+    left: 8%;
+}
+.dbtm-readmore a {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.25vw;
+    line-height: 1.7vw;
+    padding-right: 10%;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.dbtm-readmore a:hover {
+    text-decoration: underline;
 }
 .dbtm-right {
     width: 58.7671232877%;
