@@ -156,7 +156,7 @@
 }
 .dbtm-credit {
     position: absolute;
-    bottom: -10%;
+    bottom: 0;
     left: 0;
     width: 100%;
 }
@@ -200,6 +200,9 @@
 .dbtm-readmore a:hover {
     text-decoration: underline;
 }
+.dbtm-readmore img:not(.arrow) {
+    width: calc(100% - 2vw);
+}
 .dbtm-right {
     width: 58.7671232877%;
 }
@@ -215,17 +218,17 @@
 .dbtm-right a:hover {
 	text-decoration: underline;
 }
-.dbtm-right a::before {
-    content: '';
-    display: inline-block;
-    height: 2.35416666667vw;
-    width: 8.25vw;
-    background: url('../images/arrow.png') no-repeat center;
-    background-size: contain;
-    vertical-align: middle;
-    margin-top: -3px;
-    margin-right: 5px;
-}
+/*.dbtm-right a::before {*/
+    /*content: '';*/
+    /*display: inline-block;*/
+    /*height: 2.35416666667vw;*/
+    /*width: 8.25vw;*/
+    /*background: url('../images/arrow.png') no-repeat center;*/
+    /*background-size: contain;*/
+    /*vertical-align: middle;*/
+    /*margin-top: -3px;*/
+    /*margin-right: 5px;*/
+/*}*/
 .dbtm-right img {
     width: 100%;
     margin-bottom: 2.34375vw;
@@ -262,6 +265,13 @@
     -webkit-animation: arrow 0.7s infinite alternate;
     -o-animation: arrow 0.7s infinite alternate;
     animation: arrow 0.7s infinite alternate;
+}
+.arrow {
+    width: 1.25vw!important;
+    -webkit-animation: arrow 0.7s infinite alternate;
+    -o-animation: arrow 0.7s infinite alternate;
+    animation: arrow 0.7s infinite alternate;
+    position: relative;
 }
 
 .fancybox-content {
